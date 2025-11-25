@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Портфолио с фильтрацией проектов" />
+  <title>Портфолио Ольга Дегтярева</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Свой CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900 p-6 md:p-12" style="font-family: 'Inter', sans-serif;">
+
+<header class="max-w-4xl mx-auto text-center mb-12">
+  <h1 class="text-5xl font-extrabold mb-2">Дегтярева Ольга</h1>
+  <p class="text-xl text-gray-700">Java Backend Developer & Frontend Developer & QA</p>
+</header>
+
+<section class="max-w-4xl mx-auto mb-8">
+  <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block">Проекты</h2>
+  <div class="mb-6 flex flex-wrap gap-3 justify-center">
+    <button class="filter-btn active px-4 py-2 rounded cursor-pointer transition" data-filter="all" type="button">Все</button>
+    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="java" type="button">Java</button>
+    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="testing" type="button">Тестирование</button>
+    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="docker" type="button">Docker</button>
+    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="javaScript" type="button">JavaScript</button>
+  </div>
+
+  <ul id="projectList" class="grid grid-cols-1 sm:grid-cols-2 gap-6" tabindex="0" aria-label="Список проектов">
+    <!-- Проекты подгрузятся сюда -->
+  </ul>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>

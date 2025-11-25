@@ -1,0 +1,61 @@
+.filter-btn {
+  background: #e5e7eb; /* Tailwind gray-200 */
+  color: #393a3b;
+  border: none;
+  outline: none;
+  transition: background 0.23s, color 0.19s, box-shadow 0.33s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  font-weight: 500;
+  letter-spacing: .03em;
+  margin-bottom: 4px;
+}
+
+.filter-btn.active, .filter-btn:focus {
+  background: linear-gradient(90deg, #6366f1 55%, #818cf8 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(99,102,241,.20);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.filter-btn:hover:not(.active) {
+  background: #dbeafe; /* indigo-100 */
+  color: #6366f1;
+  box-shadow: 0 2px 8px 0 rgba(99,102,241,.12);
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 1.2em;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.06);
+  transition: box-shadow 0.22s, transform 0.22s;
+  border: 1px solid #f3f4f6; /* gray-100 */
+}
+
+.project-item:hover {
+  box-shadow: 0 8px 28px -4px rgba(99, 102, 241, 0.25),
+  0 8px 16px -12px rgba(99, 102, 241, 0.14);
+  transform: translateY(-4px) scale(1.015);
+  border-color: #6366f1; /* indigo-600 */
+}
+
+/* Для ссылок внутри карточки */
+.project-item a {
+  color: #6366f1;
+  font-size: 1.08em;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.18s;
+}
+
+.project-item a:hover {
+  color: #4338ca; /* indigo-800 */
+  text-decoration: underline;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 500px) {
+  .project-item {
+    padding: 1em 0.8em;
+  }
+}
