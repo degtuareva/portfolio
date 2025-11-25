@@ -17,7 +17,7 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 function displayProjects(filteredProjects) {
   projectList.innerHTML = '';
   if(filteredProjects.length === 0) {
-    projectList.innerHTML = '<li class="text-center text-gray-500 col-span-full">Нет проектов для отображения</li>';
+    projectList.innerHTML = '<li class="text-center text-gray-500 col-span-full" tabindex="0">Нет проектов для отображения</li>';
     return;
   }
   filteredProjects.forEach(project => {
@@ -45,8 +45,13 @@ function filterProjects(category) {
 
 filterButtons.forEach(btn => {
   btn.addEventListener('click', () => {
-    filterButtons.forEach(b => b.classList.remove('active'));
+    filterButtons.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
+
     const filter = btn.getAttribute('data-filter');
     const filtered = filterProjects(filter);
     displayProjects(filtered);

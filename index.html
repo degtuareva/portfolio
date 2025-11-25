@@ -25,18 +25,18 @@
   <p class="text-xl text-gray-700">Java Backend Developer & Frontend Developer & QA</p>
 </header>
 
-<section class="max-w-4xl mx-auto mb-8">
+<section class="max-w-4xl mx-auto mb-8" aria-label="Фильтр проектов">
   <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block">Проекты</h2>
-  <div class="mb-6 flex flex-wrap gap-3 justify-center">
-    <button class="filter-btn active px-4 py-2 rounded cursor-pointer transition" data-filter="all" type="button">Все</button>
-    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="java" type="button">Java</button>
-    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="testing" type="button">Тестирование</button>
-    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="docker" type="button">Docker</button>
-    <button class="filter-btn px-4 py-2 rounded cursor-pointer transition" data-filter="javaScript" type="button">JavaScript</button>
+  <div class="mb-6 flex flex-wrap gap-3 justify-center" role="group" aria-label="Выбор категории проектов">
+    <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true" tabindex="0">Все</button>
+    <button class="filter-btn" data-filter="java" type="button" aria-pressed="false" tabindex="0">Java</button>
+    <button class="filter-btn" data-filter="testing" type="button" aria-pressed="false" tabindex="0">Тестирование</button>
+    <button class="filter-btn" data-filter="docker" type="button" aria-pressed="false" tabindex="0">Docker</button>
+    <button class="filter-btn" data-filter="javaScript" type="button" aria-pressed="false" tabindex="0">JavaScript</button>
   </div>
 
   <ul id="projectList" class="grid grid-cols-1 sm:grid-cols-2 gap-6" tabindex="0" aria-label="Список проектов">
-    <!-- Проекты подгрузятся сюда -->
+    <!-- Проекты появятся здесь -->
   </ul>
 </section>
 
