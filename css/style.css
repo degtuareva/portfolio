@@ -1,15 +1,15 @@
 .filter-btn {
-  background-color: #e5e7eb; /* Tailwind gray-200 */
+  background-color: #e5e7eb;
   color: #393a3b;
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
-  border-radius: 0.75rem; /* rounded-lg */
+  border-radius: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.03em;
   margin-bottom: 0.25rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  transition: background 0.23s ease, color 0.19s ease, box-shadow 0.33s ease, transform 0.22s ease;
+  transition: background 0.23s, color 0.19s, box-shadow 0.33s, transform 0.22s;
   cursor: pointer;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .filter-btn:hover:not(.active) {
-  background-color: #dbeafe; /* Tailwind indigo-100 */
+  background-color: #dbeafe;
   color: #6366f1;
   box-shadow: 0 2px 8px rgba(99, 102, 241, 0.12);
 }
@@ -31,18 +31,17 @@
 .project-item {
   background-color: #fff;
   border-radius: 1.2em;
-  border: 1px solid #f3f4f6; /* Tailwind gray-100 */
+  border: 1px solid #f3f4f6;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
   padding: 1.5rem 1rem;
-  transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+  transition: box-shadow 0.22s, transform 0.22s, border-color 0.22s;
   cursor: pointer;
 }
 
 .project-item:hover,
 .project-item:focus {
-  box-shadow:
-    0 8px 28px -4px rgba(99, 102, 241, 0.25),
-    0 8px 16px -12px rgba(99, 102, 241, 0.14);
+  box-shadow: 0 8px 28px -4px rgba(99, 102, 241, 0.25),
+  0 8px 16px -12px rgba(99, 102, 241, 0.14);
   transform: translateY(-4px) scale(1.015);
   border-color: #6366f1;
   outline: none;
@@ -54,19 +53,33 @@
   font-size: 1.08em;
   text-decoration: none;
   word-break: break-word;
-  transition: color 0.18s ease;
+  transition: color 0.18s;
 }
 
 .project-item a:hover,
 .project-item a:focus {
-  color: #4338ca; /* Tailwind indigo-800 */
+  color: #4338ca;
   text-decoration: underline;
   outline: none;
 }
 
-/* Для мобильных устройств */
 @media (max-width: 500px) {
   .project-item {
     padding: 1rem 0.8rem;
   }
 }
+
+#dropdownMenu {
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+  z-index: 50;
+  transition: opacity 0.23s, transform 0.23s;
+}
+
+#dropdownMenu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
