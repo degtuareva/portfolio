@@ -4,99 +4,193 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Портфолио с фильтрацией проектов"/>
-  <title>Портфолио Ольга Дегтярева</title>
+  <meta name="description" content="Портфолио Ольга Дегтярева - Java Backend, React Frontend, GPT-4o-mini"/>
+  <title>Портфолио | Ольга Дегтярева</title>
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet"/>
-
-  <!-- Свой CSS -->
-  <link rel="stylesheet" href="css/style.css"/>
-
-  <!-- Google Fonts -->
+  <!-- Shields.io бейджи -->
+  <link rel="stylesheet" href="https://img.shields.io/static/v1?label=&message=Java&color=ED8B00&style=for-the-badge&logo=java&logoColor=white"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body class="bg-gray-50 text-gray-900 p-6 md:p-12" style="font-family: 'Inter', sans-serif;">
-<nav class="relative max-w-4xl mx-auto mb-6">
-  <button id="dropdownBtn"
-          class="px-5 py-2 bg-indigo-600 text-white rounded-lg font-bold focus:outline-none shadow transition hover:bg-indigo-700">
-    Меню ▼
-  </button>
-  <ul id="dropdownMenu"
-      class="absolute left-0 w-56 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 opacity-0 pointer-events-none z-10">
-    <li><a href="#projects" class="block px-6 py-2 hover:bg-indigo-50 text-indigo-700">Проекты</a></li>
-    <li><a href="#skills" class="block px-6 py-2 hover:bg-indigo-50 text-indigo-700">Навыки</a></li>
-    <li><a href="#education" class="block px-6 py-2 hover:bg-indigo-50 text-indigo-700">Образование</a></li>
-    <li><a href="#contact" class="block px-6 py-2 hover:bg-indigo-50 text-indigo-700">Контакты</a></li>
-  </ul>
-</nav>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-gray-900 min-h-screen p-4 md:p-8" style="font-family: 'Inter', sans-serif;">
 
+<!-- Hero Section -->
+<header class="max-w-5xl mx-auto text-center mb-16">
+  <div class="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl mb-6 shadow-2xl">
+    <i class="fas fa-laptop-code text-3xl text-white"></i>
+  </div>
+  <h1 class="text-5xl md:text-6xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent mb-4">
+    Ольга Дегтярева
+  </h1>
+  <p class="text-xl md:text-2xl text-gray-600 font-medium mb-8">Fullstack Developer | Java + React + GPT-4o-mini</p>
 
-<header class="max-w-4xl mx-auto text-center mb-12">
-  <h1 class="text-5xl font-extrabold mb-2">Дегтярева Ольга</h1>
-  <p class="text-xl text-gray-700">Java Backend Developer & Frontend Developer & QA</p>
+  <!-- GitHub Stats Cards -->
+  <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+    <a href="https://github.com/degtuareva" target="_blank" class="group">
+      <img src="https://img.shields.io/badge/GitHub-degtuareva-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    </a>
+    <span class="px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-100">
+        <i class="fas fa-users text-indigo-600 mr-2"></i>2 Followers
+      </span>
+    <span class="px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-100">
+        <i class="fas fa-code-branch text-green-600 mr-2"></i>17 Repositories
+      </span>
+  </div>
 </header>
 
-<section id="skills">
-  <h2>Навыки</h2>
-  <ul>
-    <li>Java, Spring Boot, Hibernate</li>
-    <li>HTML,CSS,JavaScript, React, Tailwind CSS</li>
-    <li>Тестирование: JUnit, Mockito</li>
-    <li>Docker, PostgreSQL,SQL-Lite,Git,GitHub,GitLab,REST API,Postman,Figma</li>
-    <li>Телеграмм-бот с GPT-Mini</li>
-    <LI>II-помощник-GPT-40</LI>
-  </ul>
+<!-- Navigation -->
+<nav class="max-w-5xl mx-auto mb-12">
+  <div class="flex flex-wrap gap-3 justify-center">
+    <a href="#skills" class="nav-btn group">
+      <i class="fas fa-graduation-cap mr-2"></i>Навыки
+    </a>
+    <a href="#projects" class="nav-btn group">
+      <i class="fas fa-project-diagram mr-2"></i>Проекты
+    </a>
+    <a href="#education" class="nav-btn group">
+      <i class="fas fa-school mr-2"></i>Образование
+    </a>
+    <a href="#contact" class="nav-btn group">
+      <i class="fas fa-envelope mr-2"></i>Контакты
+    </a>
+  </div>
+</nav>
+
+<!-- Skills Section -->
+<section id="skills" class="max-w-5xl mx-auto mb-20">
+  <h2 class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-12 text-center">Навыки</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Backend -->
+    <div class="skill-card bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 border border-indigo-100 hover:-translate-y-2">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mr-4">
+          <i class="fas fa-server text-xl text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">Backend</h3>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" class="mr-3" alt="Java">
+          <span class="font-semibold">Java, Spring Boot, Hibernate</span>
+        </div>
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" class="mr-3" alt="PostgreSQL">
+          <span class="font-semibold">PostgreSQL, SQL</span>
+        </div>
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" class="mr-3" alt="Docker">
+          <span class="font-semibold">Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="skill-card bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 border border-indigo-100 hover:-translate-y-2">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-4">
+          <i class="fab fa-react text-xl text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">Frontend</h3>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" class="mr-3" alt="React">
+          <span class="font-semibold">React, JavaScript</span>
+        </div>
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" class="mr-3" alt="Tailwind">
+          <span class="font-semibold">Tailwind CSS, HTML/CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI & Tools -->
+    <div class="skill-card bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 border border-indigo-100 hover:-translate-y-2">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mr-4">
+          <i class="fas fa-robot text-xl text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">AI & Tools</h3>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/GPT--4o--mini-10A37F?style=flat&logo=openai&logoColor=white" class="mr-3" alt="GPT">
+          <span class="font-semibold">GPT-4o-mini (Telegram Bot)</span>
+        </div>
+        <div class="flex items-center">
+          <img src="https://img.shields.io/badge/JUnit-4B89A6?style=flat&logo=junit5&logoColor=white" class="mr-3" alt="JUnit">
+          <span class="font-semibold">JUnit, Postman, Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="projects">
-  <h2>Примеры проектов</h2>
-  <ul>
-    <li><a href="https://github.com/degtuareva/user-service.git" target="_blank">User Service (Java + Docker +
-      Testing)</a></li>
-    <li><a href="https://github.com/degtuareva/message-service.git" target="_blank">Message Service (Java + Docker)</a>
-    </li>
-    <li><a href="https://degtuareva.github.io/GAME/" target="_blank">GAME (JavaScript)</a></li>
-    <li><a href="https://github.com/degtuareva/java-bot-homework-1.git" target="_blank">Telegram-bot-GPT-40-MINI(Java)</a></li>
-    <li><a href="https://github.com/degtuareva/java-ai-tutor.git" target="_blank">GPT-40-MINI (Java,JavaScript,React)</a></li>
-    <li><a href="https://github.com/degtuareva/pizza.git" target="_blank">PIZZA(Конструктор пиццы)(JavaScript)</a></li>
-  </ul>
-</section>
+<!-- Projects Section -->
+<section id="projects" class="max-w-6xl mx-auto mb-20">
+  <h2 class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-12 text-center">Проекты</h2>
 
-<section id="education">
-  <h2>Образование</h2>
-  <ul>
-    <li>Международная академия ШАГ</li>
-    <li>PRODUCTSTAR РБК</li>
-    <li>Белорусский государственный университет транспорта</li>
-    <li>Skillbox: Сертификаты по Java-разработке, Фронтенд-разработке,Разработка Телеграмм-бота,GPT-40-MINI</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Контактная информация</h2>
-  <p>Email: <a href="olga.olegovna.603@list.ru">olga.olegovna.603@list.ru</a></p>
-  <p>GitHub: <a href="https://github.com/degtuareva" target="_blank">github.com/degtuareva</a></p>
-  <p>Telegram: <a href="https://t.me/OLGA_O_DEG" target="_blank">@OLGA_O_DEG</a></p>
-</section>
-
-
-<section class="max-w-4xl mx-auto mb-8" aria-label="Фильтр проектов">
-  <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block">Проекты</h2>
-  <div class="mb-6 flex flex-wrap gap-3 justify-center" role="group" aria-label="Выбор категории проектов">
-    <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true" tabindex="0">Все</button>
-    <button class="filter-btn" data-filter="java" type="button" aria-pressed="false" tabindex="0">Java</button>
-    <button class="filter-btn" data-filter="testing" type="button" aria-pressed="false" tabindex="0">Тестирование
-    </button>
-    <button class="filter-btn" data-filter="docker" type="button" aria-pressed="false" tabindex="0">Docker</button>
-    <button class="filter-btn" data-filter="javaScript" type="button" aria-pressed="false" tabindex="0">JavaScript
-    </button>
+  <div class="mb-8 flex flex-wrap gap-3 justify-center">
+    <button class="filter-btn active" data-filter="all">Все</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="frontend">Frontend</button>
+    <button class="filter-btn" data-filter="ai">AI</button>
   </div>
 
-  <ul id="projectList" class="grid grid-cols-1 sm:grid-cols-2 gap-6" tabindex="0" aria-label="Список проектов"></ul>
+  <div id="projectList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+</section>
+
+<!-- Education -->
+<section id="education" class="max-w-4xl mx-auto mb-20">
+  <h2 class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-12 text-center">Образование</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-indigo-100">
+      <h3 class="text-2xl font-bold mb-4 flex items-center">
+        <i class="fas fa-university text-indigo-600 mr-3"></i>Skillbox
+      </h3>
+      <ul class="space-y-2 text-lg">
+        <li>• Java разработка</li>
+        <li>• Frontend разработка</li>
+        <li>• Telegram Bot + GPT-4o-mini</li>
+      </ul>
+    </div>
+    <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-indigo-100">
+      <h3 class="text-2xl font-bold mb-4 flex items-center">
+        <i class="fas fa-school text-indigo-600 mr-3"></i>Другое
+      </h3>
+      <ul class="space-y-2 text-lg">
+        <li>• Международная академия ШАГ</li>
+        <li>• PRODUCTSTAR РБК</li>
+        <li>• БелГУТ</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="max-w-2xl mx-auto text-center">
+  <h2 class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-12">Связаться со мной</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <a href="mailto:olga.olegovna.603@list.ru" class="contact-card group">
+      <i class="fas fa-envelope text-3xl text-indigo-600 mb-4 group-hover:animate-bounce"></i>
+      <span class="text-lg font-semibold">Email</span>
+    </a>
+    <a href="https://github.com/degtuareva" target="_blank" class="contact-card group">
+      <i class="fab fa-github text-3xl text-gray-800 mb-4 group-hover:animate-bounce"></i>
+      <span class="text-lg font-semibold">GitHub</span>
+    </a>
+    <a href="https://t.me/OLGA_O_DEG" target="_blank" class="contact-card group">
+      <i class="fab fa-telegram text-3xl text-blue-500 mb-4 group-hover:animate-bounce"></i>
+      <span class="text-lg font-semibold">Telegram</span>
+    </a>
+  </div>
 </section>
 
 <script src="js/app.js"></script>
