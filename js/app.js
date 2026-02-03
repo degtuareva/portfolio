@@ -27,8 +27,10 @@ const projects = [
   },
   {name: 'Auth Service (Java)', url: 'https://github.com/degtuareva/auth-service.git', categories: ['java']},
   {name: 'JCalc Project (Java)', url: 'https://github.com/degtuareva/jcalc.iml.git', categories: ['java']},
-  {name: 'GAME (JavaScript)', url: 'https:https://degtuareva.github.io/GAME/', categories: ['javaScript']},
-  {name: 'Pizza (JavaScript)', url: 'https://degtuareva.github.io/pizza/', categories: ['javaScript']}
+  {name: 'GAME (JavaScript)', url: 'https://degtuareva.github.io/GAME/', categories: ['javaScript']},
+  {name: 'Pizza (JavaScript)', url: 'https://github.com/degtuareva/pizza.git', categories: ['javaScript']},
+  {name:'GPT-40-MINI(Java,JavaScript,React)',url:'https://github.com/degtuareva/java-ai-tutor.git',categories:['Java,JavaScript,React']},
+  {name:'Telegram-bot-GPT-40-MINI(Java)',url:'https://github.com/degtuareva/java-bot-homework-1.git',categories:['Java']}
 ];
 
 const projectList = document.getElementById('projectList');
