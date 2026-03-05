@@ -35,6 +35,13 @@ const projects = [
     categories: ['ai', 'frontend']
   },
   {
+    name:'CreditCalculator',
+    url: 'https://github.com/degtuareva/creditCalculator.git',
+    description: 'Full‑stack‑приложение для расчета кредитного графика',
+    badges: ['React','Java','JavaScript','PWA',],
+    categories: ['frontend','java','docker']
+  },
+  {
     name: 'Pizza Constructor',
     url: 'https://github.com/degtuareva/pizza',
     description: 'Интерактивный конструктор пиццы',
