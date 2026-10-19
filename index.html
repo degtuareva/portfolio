@@ -1,241 +1,254 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Портфолио Ольга Дегтярева - Java Backend, React Frontend, GPT-4o-mini"/>
-  <title>Портфолио | Ольга Дегтярева</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ольга Дегтярева — Fullstack разработчик</title>
+  <meta name="description" content="Портфолио Ольги Дегтяревой: Java backend, React frontend, AI-инструменты, Telegram-боты и PWA.">
 
-  <!-- Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet"/>
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-
-  <!-- Кастомный CSS -->
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body class="text-gray-900 min-h-screen">
-<!-- Анимированный фон -->
-<div class="animated-bg"></div>
-
-<!-- Частицы -->
-<div class="particles" id="particles"></div>
-
-<!-- Hero Section -->
-<header class="max-w-6xl mx-auto text-center mb-16 pt-8 fade-in-up">
-  <div class="inline-flex items-center justify-center w-28 h-28 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl mb-6 shadow-2xl hero-icon">
-    <i class="fas fa-laptop-code text-4xl text-white"></i>
-  </div>
-
-  <h1 class="text-5xl md:text-7xl font-black gradient-text mb-4">
-    Ольга Дегтярева
-  </h1>
-
-  <p class="text-xl md:text-2xl text-white font-medium mb-8 drop-shadow-lg">
-    Fullstack Developer | Java + React + AI
-  </p>
-
-  <!-- GitHub Stats Cards -->
-  <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 flex-wrap">
-    <a href="https://github.com/degtuareva" target="_blank" class="group">
-      <img src="https://img.shields.io/badge/GitHub-degtuareva-181717?style=for-the-badge&logo=github&logoColor=white"
-           alt="GitHub" class="hover:scale-105 transition-transform duration-300">
-    </a>
-    <span class="px-6 py-3 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-200 pulse-badge">
-        <i class="fas fa-users text-indigo-600 mr-2"></i><strong>2</strong> Followers
-      </span>
-    <span class="px-6 py-3 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-200 pulse-badge">
-        <i class="fas fa-code-branch text-green-600 mr-2"></i><strong>17</strong> Repositories
-      </span>
-  </div>
-
-  <!-- CTA Button -->
-  <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold rounded-2xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 group">
-    <i class="fas fa-paper-plane mr-2 group-hover:animate-bounce"></i>Связаться со мной
-  </a>
-</header>
-
-<!-- Navigation -->
-<nav class="max-w-5xl mx-auto mb-16 fade-in-up">
-  <div class="flex flex-wrap gap-3 justify-center">
-    <a href="#skills" class="nav-btn">
-      <i class="fas fa-graduation-cap mr-2"></i>Навыки
-    </a>
-    <a href="#projects" class="nav-btn">
-      <i class="fas fa-project-diagram mr-2"></i>Проекты
-    </a>
-    <a href="#education" class="nav-btn">
-      <i class="fas fa-school mr-2"></i>Образование
-    </a>
-    <a href="#contact" class="nav-btn">
-      <i class="fas fa-envelope mr-2"></i>Контакты
-    </a>
+<nav class="site-nav" id="siteNav">
+  <div class="container">
+    <a href="#" class="nav-logo">O<span>.</span>D</a>
+    <ul class="nav-links">
+      <li><a href="#about">обо мне</a></li>
+      <li><a href="#skills">навыки</a></li>
+      <li><a href="#projects">проекты</a></li>
+      <li><a href="#education">образование</a></li>
+      <li><a href="#contacts">контакты</a></li>
+    </ul>
+    <a href="#contacts" class="nav-cta">связаться</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+      <i class="fas fa-bars"></i>
+    </button>
   </div>
 </nav>
 
-<!-- Skills Section -->
-<section id="skills" class="max-w-6xl mx-auto mb-20 px-4">
-  <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center fade-in-up">Навыки</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Backend -->
-    <div class="skill-card fade-in-up">
-      <div class="flex items-center mb-6">
-        <div class="w-14 h-14 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
-          <i class="fas fa-server text-xl text-white"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-gray-800">Backend</h3>
+<header class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow">портфолио разработчика</span>
+      <h1 class="hero-name">Ольга Дегтярева</h1>
+      <div class="hero-role"><span id="typed"></span></div>
+      <p class="hero-pitch">
+        Создаю веб-приложения на Java и React, интегрирую GPT-4o-mini
+        в Telegram-ботов и учебные сервисы. Собираю продукты от идеи
+        до деплоя: backend, frontend, Docker и PWA.
+      </p>
+      <div class="hero-actions">
+        <a href="https://t.me/OLGA_O_DEG" target="_blank" class="btn btn-primary">
+          <i class="fab fa-telegram"></i> Написать в Telegram
+        </a>
+        <a href="https://github.com/degtuareva" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:olga.olegovna.603@list.ru" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Email
+        </a>
       </div>
-      <div class="space-y-3">
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" class="mr-3 w-24" alt="Java">
-          <span class="font-semibold text-gray-700">Java, Spring Boot</span>
+      <div class="hero-stats">
+        <div><strong>17</strong><span>репозиториев на GitHub</span></div>
+        <div><strong>7</strong><span>проектов в портфолио</span></div>
+        <div><strong>10+</strong><span>технологий в стеке</span></div>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="plate">
+        <!-- Декоративные углы -->
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner tr" aria-hidden="true"></span>
+        <span class="corner bl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
+
+        <!-- Фотография -->
+        <div class="photo-box">
+          <img
+            src="images/photo.jpg"
+            alt="Ольга Дегтярева"
+            class="hero-photo"
+            width="260"
+            height="260"
+          >
         </div>
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" class="mr-3 w-24" alt="PostgreSQL">
-          <span class="font-semibold text-gray-700">PostgreSQL, SQL</span>
-        </div>
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" class="mr-3 w-24" alt="Docker">
-          <span class="font-semibold text-gray-700">Docker, JPA, Hibernate</span>
-        </div>
+      </div>
+      <span class="tag">status: open to work</span>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="container">
+    <span class="eyebrow">01. обо мне</span>
+    <h2>Кто я</h2>
+    <p>
+      Я — <b>fullstack-разработчик</b> с фокусом на <b>Java backend, React frontend и AI</b>.
+      Разрабатываю микросервисы, PWA-приложения и Telegram-ботов с интеграцией GPT-4o-mini.
+      Люблю превращать учебные идеи в работающие продукты: от калькулятора кредита
+      до AI-репетитора. Моя цель — создавать приложения, которые реально помогают людям.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">02. стек</span>
+      <h2>Мои навыки</h2>
+      <p>Backend, frontend и AI — то, с чем я работаю каждый день.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-level="90">
+        <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">90%</span></div>
+        <p class="skill-desc">Spring Boot, JPA, микросервисы</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="80">
+        <div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">80%</span></div>
+        <p class="skill-desc">SPA, Vite, PWA</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="80">
+        <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">80%</span></div>
+        <p class="skill-desc">Frontend, Fetch API, интерактив</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="85">
+        <div class="skill-top"><span class="skill-name">PostgreSQL</span><span class="skill-pct">85%</span></div>
+        <p class="skill-desc">Проектирование БД, SQL</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="75">
+        <div class="skill-top"><span class="skill-name">Docker</span><span class="skill-pct">75%</span></div>
+        <p class="skill-desc">Контейнеризация и деплой</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="85">
+        <div class="skill-top"><span class="skill-name">GPT-4o-mini</span><span class="skill-pct">85%</span></div>
+        <p class="skill-desc">Telegram-боты, AI-сервисы</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="75">
+        <div class="skill-top"><span class="skill-name">JUnit</span><span class="skill-pct">75%</span></div>
+        <p class="skill-desc">Тестирование backend-логики</p>
+        <div class="meter"></div>
+      </div>
+      <div class="skill-card" data-level="80">
+        <div class="skill-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">80%</span></div>
+        <p class="skill-desc">Версионирование и командная работа</p>
+        <div class="meter"></div>
       </div>
     </div>
 
-    <!-- Frontend -->
-    <div class="skill-card fade-in-up" style="animation-delay: 0.1s;">
-      <div class="flex items-center mb-6">
-        <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
-          <i class="fab fa-react text-xl text-white"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-gray-800">Frontend</h3>
+    <div class="ai-panel">
+      <div class="ai-panel-head">
+        <span class="eyebrow">ai-in-development</span>
+        <h3>Интегрирую AI в продукты</h3>
+        <p>Использую GPT-4o-mini не только как помощника, но и как часть продукта: боты, репетиторы и умные сервисы.</p>
       </div>
-      <div class="space-y-3">
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" class="mr-3 w-24" alt="React">
-          <span class="font-semibold text-gray-700">React + Vite + PWA</span>
+      <div class="ai-panel-grid">
+        <div class="ai-item">
+          <span class="ai-item-label"><i class="fas fa-robot"></i> Telegram GPT Bot</span>
+          <span class="ai-item-desc">Бот с диалогами на базе GPT-4o-mini</span>
         </div>
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" class="mr-3 w-24" alt="Tailwind">
-          <span class="font-semibold text-gray-700">Tailwind CSS</span>
+        <div class="ai-item">
+          <span class="ai-item-label"><i class="fas fa-graduation-cap"></i> AI Tutor</span>
+          <span class="ai-item-desc">React-приложение с AI-репетитором</span>
         </div>
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" class="mr-3 w-24" alt="JavaScript">
-          <span class="font-semibold text-gray-700">Fetch API, HTML/CSS</span>
+        <div class="ai-item">
+          <span class="ai-item-label"><i class="fas fa-terminal"></i> Автоматизация</span>
+          <span class="ai-item-desc">Скрипты и сервисы для рутинных задач</span>
         </div>
+      </div>
+      <div class="ai-panel-tags">
+        <span class="tech-tag">AI-ассистенты</span>
+        <span class="tech-tag">Telegram Bot API</span>
+        <span class="tech-tag">PWA</span>
+        <span class="tech-tag">Микросервисы</span>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- AI & Tools -->
-    <div class="skill-card fade-in-up" style="animation-delay: 0.2s;">
-      <div class="flex items-center mb-6">
-        <div class="w-14 h-14 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
-          <i class="fas fa-robot text-xl text-white"></i>
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">03. работы</span>
+      <h2>Мои проекты</h2>
+      <p>Семь законченных проектов — от микросервисов до AI-приложений.</p>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">04. обучение</span>
+      <h2>Образование</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">Skillbox</div>
+        <div class="timeline-content">
+          <h4>Java-разработка, Frontend, Telegram Bot + GPT</h4>
+          <p>Практические курсы по backend, frontend и интеграции AI в приложения.</p>
         </div>
-        <h3 class="text-2xl font-bold text-gray-800">AI & Tools</h3>
       </div>
-      <div class="space-y-3">
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/GPT--4o--mini-10A37F?style=flat&logo=openai&logoColor=white" class="mr-3 w-28" alt="GPT">
-          <span class="font-semibold text-gray-700">GPT-4o-mini</span>
+      <div class="timeline-item">
+        <div class="timeline-year">ШАГ</div>
+        <div class="timeline-content">
+          <h4>Международная академия ШАГ</h4>
+          <p>Основы программирования и компьютерных наук.</p>
         </div>
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/JUnit-4B89A6?style=flat&logo=junit5&logoColor=white" class="mr-3 w-24" alt="JUnit">
-          <span class="font-semibold text-gray-700">JUnit, Postman</span>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">PRODUCTSTAR</div>
+        <div class="timeline-content">
+          <h4>РБК PRODUCTSTAR</h4>
+          <p>Продуктовые и IT-навыки, работа над реальными задачами.</p>
         </div>
-        <div class="flex items-center">
-          <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" class="mr-3 w-20" alt="Git">
-          <span class="font-semibold text-gray-700">Git, GitHub</span>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">БелГУТ</div>
+        <div class="timeline-content">
+          <h4>Белорусский государственный университет транспорта</h4>
+          <p>Базовое высшее образование.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="max-w-6xl mx-auto mb-20 px-4">
-  <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center fade-in-up">Проекты</h2>
-
-  <div class="mb-8 flex flex-wrap gap-3 justify-center fade-in-up">
-    <button class="filter-btn active" data-filter="all">Все</button>
-    <button class="filter-btn" data-filter="java">Java</button>
-    <button class="filter-btn" data-filter="frontend">Frontend</button>
-    <button class="filter-btn" data-filter="ai">AI</button>
-  </div>
-
-  <div id="projectList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
-</section>
-
-<!-- Education -->
-<section id="education" class="max-w-5xl mx-auto mb-20 px-4">
-  <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center fade-in-up">Образование</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="skill-card fade-in-up">
-      <h3 class="text-2xl font-bold mb-4 flex items-center">
-        <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mr-3">
-          <i class="fas fa-university text-white"></i>
-        </div>
-        Skillbox
-      </h3>
-      <ul class="space-y-2 text-lg">
-        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Java разработка</li>
-        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Разработка приложений</li>
-        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Frontend разработка</li>
-        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Telegram Bot + GPT-4o-mini</li>
-      </ul>
+<section class="contacts" id="contacts">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">05. на связи</span>
+      <h2>Давайте работать вместе</h2>
+      <p>Открыта к предложениям по Java, React и AI-разработке.</p>
     </div>
-    <div class="skill-card fade-in-up" style="animation-delay: 0.1s;">
-      <h3 class="text-2xl font-bold mb-4 flex items-center">
-        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-3">
-          <i class="fas fa-school text-white"></i>
-        </div>
-        Другое
-      </h3>
-      <ul class="space-y-2 text-lg">
-        <li class="flex items-center"><i class="fas fa-graduation-cap text-indigo-500 mr-2"></i>Международная академия ШАГ</li>
-        <li class="flex items-center"><i class="fas fa-graduation-cap text-indigo-500 mr-2"></i>PRODUCTSTAR РБК</li>
-        <li class="flex items-center"><i class="fas fa-graduation-cap text-indigo-500 mr-2"></i>БелГУТ</li>
-      </ul>
-    </div>
+    <ul class="contact-list">
+      <li><a href="mailto:olga.olegovna.603@list.ru"><i class="fas fa-envelope"></i> olga.olegovna.603@list.ru</a></li>
+      <li><a href="https://github.com/degtuareva" target="_blank"><i class="fab fa-github"></i> github.com/degtuareva</a></li>
+      <li><a href="https://t.me/OLGA_O_DEG" target="_blank"><i class="fab fa-telegram"></i> @OLGA_O_DEG</a></li>
+    </ul>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="max-w-5xl mx-auto mb-16 px-4">
-  <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center fade-in-up">Связаться со мной</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <a href="mailto:olga.olegovna.603@list.ru" class="contact-card fade-in-up">
-      <i class="fas fa-envelope text-5xl text-indigo-600 mb-4"></i>
-      <span class="text-xl font-bold block mb-2">Email</span>
-      <span class="text-gray-600 text-sm">olga.olegovna.603@list.ru</span>
-    </a>
-    <a href="https://github.com/degtuareva" target="_blank" class="contact-card fade-in-up" style="animation-delay: 0.1s;">
-      <i class="fab fa-github text-5xl text-gray-800 mb-4"></i>
-      <span class="text-xl font-bold block mb-2">GitHub</span>
-      <span class="text-gray-600 text-sm">@degtuareva</span>
-    </a>
-    <a href="https://t.me/OLGA_O_DEG" target="_blank" class="contact-card fade-in-up" style="animation-delay: 0.2s;">
-      <i class="fab fa-telegram text-5xl text-blue-500 mb-4"></i>
-      <span class="text-xl font-bold block mb-2">Telegram</span>
-      <span class="text-gray-600 text-sm">@OLGA_O_DEG</span>
-    </a>
+<footer>
+  <div class="container">
+    <p>© 2026 Ольга Дегтярева. Все права защищены.</p>
   </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center py-8 fade-in-up">
-  <p class="text-white/80 text-sm">
-    Made with <i class="fas fa-heart text-red-500 animate-pulse"></i> by Ольга Дегтярева | 2026
-  </p>
 </footer>
 
-<!-- Кастомный JS -->
 <script src="js/app.js"></script>
 </body>
 </html>
