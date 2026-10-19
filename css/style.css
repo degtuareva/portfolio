@@ -3,16 +3,28 @@
    ========================================================== */
 
 :root {
-  --bg: #0b1220;
-  --bg-soft: #0f1830;
-  --surface: #131c2e;
-  --surface-hi: #182342;
-  --line: #26314a;
-  --text: #e6edf3;
-  --muted: #8b98ab;
-  --accent: #4fd1c5;
-  --accent-dim: rgba(79, 209, 197, 0.14);
-  --amber: #f2b705;
+  /* Основной фон */
+  --bg: #191620;
+  --bg-soft: #211c2b;
+
+  /* Карточки и панели */
+  --surface: #282232;
+  --surface-hi: #332b40;
+
+  /* Рамки */
+  --line: #463b54;
+
+  /* Текст */
+  --text: #f3edf7;
+  --muted: #b9adc5;
+
+  /* Лавандовый акцент */
+  --accent: #c4a7e7;
+  --accent-dim: rgba(196, 167, 231, 0.12);
+
+  /* Статус под фотографией */
+  --amber: #edc99b;
+
   --radius: 10px;
   --font-display: "Space Grotesk", "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -37,18 +49,20 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+
   background-image:
     radial-gradient(
-      circle at 12% 8%,
-      rgba(79, 209, 197, 0.07),
-      transparent 40%
+      ellipse at 10% 0%,
+      rgba(196, 167, 231, 0.09),
+      transparent 45%
     ),
     radial-gradient(
-      circle at 88% 20%,
-      rgba(242, 183, 5, 0.05),
-      transparent 35%
+      ellipse at 90% 25%,
+      rgba(224, 170, 180, 0.05),
+      transparent 40%
     );
+
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -908,4 +922,18 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
+}
+/* Навигация в цвет новой темы */
+.site-nav {
+  background: rgba(25, 22, 32, 0.94);
+}
+
+/* Тёмный текст на лавандовой кнопке */
+.btn-primary {
+  color: var(--bg);
+}
+
+/* Рамки тегов технологий */
+.tech-tag {
+  border-color: rgba(196, 167, 231, 0.25);
 }
