@@ -937,3 +937,13 @@ footer {
 .tech-tag {
   border-color: rgba(196, 167, 231, 0.25);
 }
+/* Подзаголовок внутри блока образования */
+.education-subhead {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.education-subhead h3 {
+  color: var(--text);
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+}
