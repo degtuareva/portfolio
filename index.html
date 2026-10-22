@@ -3,72 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ольга Дегтярева — Fullstack разработчик</title>
-  <meta name="description" content="Портфолио Ольги Дегтяревой: Java backend, React frontend, AI-инструменты, Telegram-боты и PWA.">
 
+  <title>Ольга Дегтярева — Java, React и AI-разработка</title>
+
+  <meta
+    name="description"
+    content="Портфолио Ольги Дегтяревой: Java backend, React frontend, Telegram-боты, AI-интеграции и PWA-приложения."
+  >
+
+  <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
-<nav class="site-nav" id="siteNav">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Иконки -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Скрипты: сначала библиотека, затем код портфолио -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
+    defer
+  ></script>
+
+  <script src="js/app.js" defer></script>
+</head>
+
+<body id="top">
+
+<!-- Навигация -->
+<nav class="site-nav" id="siteNav" aria-label="Основная навигация">
   <div class="container">
-    <a href="#" class="nav-logo">O<span>.</span>D</a>
-    <ul class="nav-links">
-      <li><a href="#about">обо мне</a></li>
-      <li><a href="#skills">навыки</a></li>
-      <li><a href="#projects">проекты</a></li>
-      <li><a href="#education">образование</a></li>
-      <li><a href="#contacts">контакты</a></li>
+
+    <a
+      href="#top"
+      class="nav-logo"
+      aria-label="Ольга Дегтярева — на главную"
+    >
+      Ольга<span>.</span>Д
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#projects">Проекты</a></li>
+      <li><a href="#education">Образование</a></li>
+      <li><a href="#contacts">Контакты</a></li>
     </ul>
-    <a href="#contacts" class="nav-cta">связаться</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
-      <i class="fas fa-bars"></i>
+
+    <a href="#contacts" class="nav-cta">
+      Обсудить сотрудничество
+    </a>
+
+    <button
+      type="button"
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      aria-controls="navLinks"
+    >
+      <i class="fas fa-bars" aria-hidden="true"></i>
     </button>
+
   </div>
 </nav>
 
+<!-- Первый экран -->
 <header class="hero">
   <div class="container">
+
     <div class="hero-copy">
-      <span class="eyebrow">портфолио разработчика</span>
+      <span class="eyebrow">Java · React · AI</span>
+
       <h1 class="hero-name">Ольга Дегтярева</h1>
-      <div class="hero-role"><span id="typed"></span></div>
+
+      <!-- Анимированная строка заполняется через app.js -->
+      <div class="hero-role">
+        <span id="typed"></span>
+      </div>
+
       <p class="hero-pitch">
-        Создаю веб-приложения на Java и React, интегрирую GPT-4o-mini
-        в Telegram-ботов и учебные сервисы. Собираю продукты от идеи
-        до деплоя: backend, frontend, Docker и PWA.
+        Создаю веб-приложения на Java и React,
+        разрабатываю Telegram-ботов и интегрирую AI
+        в учебные сервисы. В моём портфолио —
+        микросервисы, PWA-приложения и проекты
+        с кнопочным интерфейсом в Telegram.
       </p>
+
       <div class="hero-actions">
-        <a href="https://t.me/OLGA_O_DEG" target="_blank" class="btn btn-primary">
-          <i class="fab fa-telegram"></i> Написать в Telegram
+        <a
+          href="https://t.me/OLGA_O_DEG"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          <i class="fab fa-telegram" aria-hidden="true"></i>
+          Написать мне
         </a>
-        <a href="https://github.com/degtuareva" target="_blank" class="btn btn-outline">
-          <i class="fab fa-github"></i> GitHub
+
+        <a href="#projects" class="btn btn-outline">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          Посмотреть проекты
         </a>
-        <a href="mailto:olga.olegovna.603@list.ru" class="btn btn-outline">
-          <i class="fas fa-envelope"></i> Email
+
+        <a
+          href="https://github.com/degtuareva"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          <i class="fab fa-github" aria-hidden="true"></i>
+          GitHub
         </a>
       </div>
+
+      <!-- Вместо неподтверждённых счётчиков — направления работы -->
       <div class="hero-stats">
-        <div><strong>17</strong><span>репозиториев на GitHub</span></div>
-        <div><strong>7</strong><span>проектов в портфолио</span></div>
-        <div><strong>10+</strong><span>технологий в стеке</span></div>
+        <div>
+          <strong>Java</strong>
+          <span>Backend и микросервисы</span>
+        </div>
+
+        <div>
+          <strong>React</strong>
+          <span>Интерфейсы и PWA</span>
+        </div>
+
+        <div>
+          <strong>AI</strong>
+          <span>Боты и интеграции</span>
+        </div>
       </div>
     </div>
+
+    <!-- Фотография -->
     <div class="hero-frame">
       <div class="plate">
-        <!-- Декоративные углы -->
-        <span class="corner tl" aria-hidden="true"></span>
-        <span class="corner tr" aria-hidden="true"></span>
-        <span class="corner bl" aria-hidden="true"></span>
-        <span class="corner br" aria-hidden="true"></span>
-
-        <!-- Фотография -->
         <div class="photo-box">
           <img
             src="images/photo.jpg"
@@ -79,198 +159,377 @@
           >
         </div>
       </div>
-      <span class="tag">status: open to work</span>
+
+      <span class="tag">Открыта к предложениям</span>
     </div>
+
   </div>
 </header>
 
-<section class="about" id="about">
-  <div class="container">
-    <span class="eyebrow">01. обо мне</span>
-    <h2>Кто я</h2>
-    <p>
-      Я — <b>fullstack-разработчик</b> с фокусом на <b>Java backend, React frontend и AI</b>.
-      Разрабатываю микросервисы, PWA-приложения и Telegram-ботов с интеграцией GPT-4o-mini.
-      Люблю превращать учебные идеи в работающие продукты: от калькулятора кредита
-      до AI-репетитора. Моя цель — создавать приложения, которые реально помогают людям.
-    </p>
-  </div>
-</section>
+<main>
 
-<section id="skills">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">02. стек</span>
-      <h2>Мои навыки</h2>
-      <p>Backend, frontend и AI — то, с чем я работаю каждый день.</p>
+  <!-- Обо мне -->
+  <section class="about" id="about" aria-labelledby="aboutTitle">
+    <div class="container">
+      <span class="eyebrow">Знакомство</span>
+
+      <h2 id="aboutTitle">От идеи к работающему приложению</h2>
+
+      <p>
+        Я — fullstack-разработчик с фокусом на Java backend,
+        React frontend и AI-интеграции.
+        Разрабатываю микросервисы, PWA-приложения
+        и Telegram-ботов.
+      </p>
+
+      <p>
+        Мне интересно превращать учебные идеи в практические
+        проекты: от калькулятора кредита до AI-репетитора.
+        Люблю задачи, в которых серверная логика
+        и понятный интерфейс работают вместе.
+      </p>
     </div>
+  </section>
 
-    <div class="skills-grid">
-      <div class="skill-card" data-level="90">
-        <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">90%</span></div>
-        <p class="skill-desc">Spring Boot, JPA, микросервисы</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="80">
-        <div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">80%</span></div>
-        <p class="skill-desc">SPA, Vite, PWA</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="80">
-        <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">80%</span></div>
-        <p class="skill-desc">Frontend, Fetch API, интерактив</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="85">
-        <div class="skill-top"><span class="skill-name">PostgreSQL</span><span class="skill-pct">85%</span></div>
-        <p class="skill-desc">Проектирование БД, SQL</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="75">
-        <div class="skill-top"><span class="skill-name">Docker</span><span class="skill-pct">75%</span></div>
-        <p class="skill-desc">Контейнеризация и деплой</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="85">
-        <div class="skill-top"><span class="skill-name">GPT-4o-mini</span><span class="skill-pct">85%</span></div>
-        <p class="skill-desc">Telegram-боты, AI-сервисы</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="75">
-        <div class="skill-top"><span class="skill-name">JUnit</span><span class="skill-pct">75%</span></div>
-        <p class="skill-desc">Тестирование backend-логики</p>
-        <div class="meter"></div>
-      </div>
-      <div class="skill-card" data-level="80">
-        <div class="skill-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">80%</span></div>
-        <p class="skill-desc">Версионирование и командная работа</p>
-        <div class="meter"></div>
-      </div>
-    </div>
+  <!-- Навыки -->
+  <section id="skills" aria-labelledby="skillsTitle">
+    <div class="container">
 
-    <div class="ai-panel">
-      <div class="ai-panel-head">
-        <span class="eyebrow">ai-in-development</span>
-        <h3>Интегрирую AI в продукты</h3>
-        <p>Использую GPT-4o-mini не только как помощника, но и как часть продукта: боты, репетиторы и умные сервисы.</p>
+      <div class="section-head">
+        <span class="eyebrow">Мои инструменты</span>
+        <h2 id="skillsTitle">Технологии в моих проектах</h2>
+        <p>
+          Backend, интерфейсы, базы данных
+          и интеграции с внешними сервисами.
+        </p>
       </div>
-      <div class="ai-panel-grid">
-        <div class="ai-item">
-          <span class="ai-item-label"><i class="fas fa-robot"></i> Telegram GPT Bot</span>
-          <span class="ai-item-desc">Бот с диалогами на базе GPT-4o-mini</span>
+
+      <!--
+        Процентные оценки убраны.
+        Пустые meter сохранены для совместимости
+        с текущим app.js, который ищет их в карточках.
+      -->
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">Java</span>
+          </div>
+          <p class="skill-desc">
+            Spring Boot, JPA, микросервисы
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
-        <div class="ai-item">
-          <span class="ai-item-label"><i class="fas fa-graduation-cap"></i> AI Tutor</span>
-          <span class="ai-item-desc">React-приложение с AI-репетитором</span>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">React</span>
+          </div>
+          <p class="skill-desc">
+            Компонентные интерфейсы, Vite, PWA
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
-        <div class="ai-item">
-          <span class="ai-item-label"><i class="fas fa-terminal"></i> Автоматизация</span>
-          <span class="ai-item-desc">Скрипты и сервисы для рутинных задач</span>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <p class="skill-desc">
+            Интерактивные страницы и Fetch API
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
-      </div>
-      <div class="ai-panel-tags">
-        <span class="tech-tag">AI-ассистенты</span>
-        <span class="tech-tag">Telegram Bot API</span>
-        <span class="tech-tag">PWA</span>
-        <span class="tech-tag">Микросервисы</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="projects">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">03. работы</span>
-      <h2>Мои проекты</h2>
-      <p>Семь законченных проектов — от микросервисов до AI-приложений.</p>
-    </div>
-    <div class="projects-grid" id="projectsGrid"></div>
-  </div>
-</section>
-
-<section id="education">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">04. обучение</span>
-      <h2>Образование</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-year">2025</div>
-
-        <div class="timeline-content">
-          <h4>Международная компьютерная академия ШАГ</h4>
-          <p>Java-разработка, Frontend-разработка</p>
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">PostgreSQL</span>
+          </div>
+          <p class="skill-desc">
+            SQL и работа с базами данных
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2008</div>
-
-        <div class="timeline-content">
-          <h4>Белорусский государственный университет транспорта</h4>
-          <p>Экономист, бухгалтерский учёт, анализ и аудит</p>
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">Docker</span>
+          </div>
+          <p class="skill-desc">
+            Контейнеризация приложений
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
-      </div>
-    </div>
 
-    <div class="section-head education-subhead">
-      <h3>Курсы и сертификаты</h3>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-year">2026</div>
-
-        <div class="timeline-content">
-          <h4>PRODUCTSTAR × РБК</h4>
-          <p>Курс «Профессия: Java-разработчик»</p>
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">AI-интеграции</span>
+          </div>
+          <p class="skill-desc">
+            GPT-4o-mini, Telegram-боты и учебные сервисы
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2025</div>
-
-        <div class="timeline-content">
-          <h4>Разработка программного обеспечения на языке Java</h4>
-          <p>Сертификат</p>
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">JUnit</span>
+          </div>
+          <p class="skill-desc">
+            Тестирование backend-логики
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
         </div>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="skill-name">Git / GitHub</span>
+          </div>
+          <p class="skill-desc">
+            Контроль версий и хранение исходного кода
+          </p>
+          <div class="meter" hidden aria-hidden="true"></div>
+        </div>
+
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2024</div>
+      <!-- AI-проекты -->
+      <div class="ai-panel">
+        <div class="ai-panel-head">
+          <span class="eyebrow">AI в приложениях</span>
+          <h3>Не только помощник, но и часть продукта</h3>
+          <p>
+            Использую интеграции с AI-моделями
+            в ботах и учебных приложениях.
+          </p>
+        </div>
 
-        <div class="timeline-content">
-          <h4>Front-end разработка</h4>
-          <p>Сертификат</p>
+        <div class="ai-panel-grid">
+
+          <div class="ai-item">
+              <span class="ai-item-label">
+                <i class="fas fa-robot" aria-hidden="true"></i>
+                Telegram GPT Bot
+              </span>
+            <span class="ai-item-desc">
+                Диалоги на базе GPT-4o-mini
+              </span>
+          </div>
+
+          <div class="ai-item">
+              <span class="ai-item-label">
+                <i
+                  class="fas fa-graduation-cap"
+                  aria-hidden="true"
+                ></i>
+                AI Tutor
+              </span>
+            <span class="ai-item-desc">
+                React-приложение с AI-репетитором
+              </span>
+          </div>
+
+        </div>
+
+        <div class="ai-panel-tags">
+          <span class="tech-tag">AI-ассистенты</span>
+          <span class="tech-tag">Telegram Bot API</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Java</span>
         </div>
       </div>
+
     </div>
-  </div>
-</section>
-<section class="contacts" id="contacts">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">05. на связи</span>
-      <h2>Давайте работать вместе</h2>
-      <p>Открыта к предложениям по Java, React и AI-разработке.</p>
+  </section>
+
+  <!-- Проекты -->
+  <section id="projects" aria-labelledby="projectsTitle">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Практика и разработка</span>
+        <h2 id="projectsTitle">Что я создаю</h2>
+        <p>
+          Веб-приложения, микросервисы и Telegram-боты.
+          Исходный код проектов доступен на GitHub.
+        </p>
+      </div>
+
+      <!--
+        Новый проект размещён непосредственно в HTML.
+        Не добавляйте его повторно в массив projects в app.js.
+      -->
+      <article class="project-card project-card--featured">
+        <span class="project-label">Новый проект</span>
+
+        <h3>Credit Telegram Bot</h3>
+
+        <p>
+          Telegram-бот с кнопочным интерфейсом.
+          Взаимодействие с ботом организовано через
+          кнопки в чате.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Telegram Bot</span>
+          <span class="tech-tag">Кнопочный интерфейс</span>
+        </div>
+
+        <div class="project-actions">
+          <a
+            href="https://github.com/degtuareva/credit-telegram-bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+            Смотреть код
+          </a>
+        </div>
+      </article>
+
+      <!-- Остальные проекты выводятся через js/app.js -->
+      <div class="projects-grid" id="projectsGrid"></div>
+
     </div>
-    <ul class="contact-list">
-      <li><a href="mailto:olga.olegovna.603@list.ru"><i class="fas fa-envelope"></i> olga.olegovna.603@list.ru</a></li>
-      <li><a href="https://github.com/degtuareva" target="_blank"><i class="fab fa-github"></i> github.com/degtuareva</a></li>
-      <li><a href="https://t.me/OLGA_O_DEG" target="_blank"><i class="fab fa-telegram"></i> @OLGA_O_DEG</a></li>
-    </ul>
-  </div>
-</section>
+  </section>
+
+  <!-- Образование -->
+  <section id="education" aria-labelledby="educationTitle">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Образование и развитие</span>
+        <h2 id="educationTitle">Мой путь в профессию</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+
+          <div class="timeline-content">
+            <h4>Международная компьютерная академия ШАГ</h4>
+            <p>Java-разработка, Frontend-разработка</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2008</div>
+
+          <div class="timeline-content">
+            <h4>
+              Белорусский государственный университет транспорта
+            </h4>
+            <p>
+              Экономист, бухгалтерский учёт, анализ и аудит
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-head education-subhead">
+        <h3>Курсы и сертификаты</h3>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+
+          <div class="timeline-content">
+            <h4>PRODUCTSTAR × РБК</h4>
+            <p>Курс «Профессия: Java-разработчик»</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+
+          <div class="timeline-content">
+            <h4>
+              Разработка программного обеспечения на языке Java
+            </h4>
+            <p>Сертификат</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+
+          <div class="timeline-content">
+            <h4>Front-end разработка</h4>
+            <p>Сертификат</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section
+    class="contacts"
+    id="contacts"
+    aria-labelledby="contactsTitle"
+  >
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">На связи</span>
+        <h2 id="contactsTitle">Начнём с разговора</h2>
+        <p>
+          Открыта к предложениям по Java, React
+          и AI-разработке. Напишите мне в Telegram
+          или на почту.
+        </p>
+      </div>
+
+      <ul class="contact-list">
+
+        <li>
+          <a
+            href="https://t.me/OLGA_O_DEG"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-telegram" aria-hidden="true"></i>
+            <span>@OLGA_O_DEG</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:olga.olegovna.603@list.ru">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>olga.olegovna.603@list.ru</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/degtuareva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span>github.com/degtuareva</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+</main>
 
 <footer>
   <div class="container">
-    <p>© 2026 Ольга Дегтярева. Все права защищены.</p>
+    <p>© 2026 Ольга Дегтярева</p>
   </div>
 </footer>
 
-<script src="js/app.js"></script>
 </body>
 </html>
